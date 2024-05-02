@@ -24,20 +24,23 @@
     <div class="contactContent">
         <div class="leftSideForm">
             <div class="address">
-                <div class="contactItem"></div>
-                <i class="fa-solid fa-map-location-dot"></i>
+                <div class="contactItem">
+                <i class="fa-solid fa-map-location-dot addressIcon"></i>
+                </div>
                 <div class="contactOne">Address</div>
-                <div class="cotactTwo">Tokyo,Japan</div>
+                <div class="contactTwo">Tokyo,Japan</div>
             </div>
             <div class="phone">
-                <div class="contactItem"></div>
-                <i class="fa-solid fa-phone-volume"></i>
+                <div class="contactItem">
+                <i class="fa-solid fa-phone-volume phoneIcon"></i>
+                </div>
                 <div class="contactOne">Phone</div>
                 <div class="contactTwo">+81 002 2334 5566</div>
             </div>
             <div class="email">
-                <div class="contactItem"></div>
-                <i class="fa-solid fa-envelope"></i>
+                <div class="contactItem">
+                <i class="fa-solid fa-envelope emailIcon"></i>
+                </div>
                 <div class="contactOne">Email</div>
                 <div class="contactTwo">travelgo@gmail.com</div>
             </div>
@@ -45,19 +48,19 @@
         <form class="rightSideForm">
         <h2 class="formText">Contact Us</h2>
         <div class="inputBox">
-            <input type="text" placeholder="Enter Your Name">
+            <input type="text" placeholder="Enter Your Name" required>
         </div>
         <div class="inputbox">
-            <input type="text" placeholder="Enter Your Email">
+            <input type="text" placeholder="Enter Your Email" required>
         </div>
         <div class="inputbox">
-            <input type="text" placeholder="Subject">
+            <input type="text" placeholder="Subject" required>
         </div>
         <div class="input-box">
-
+            <textarea name="message" id="message" cols="25" rows="6" placeholder="Message" required></textarea>
         </div>
         <div class="submit">
-            <input type="button" value="Submit Now">
+            <input type="button" value="Submit Now" style="color: white; background-color: rgb(16, 16, 198);">
         </div>
         </form>
     </div>
