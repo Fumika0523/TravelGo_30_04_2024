@@ -279,13 +279,13 @@ ul{
     align-items:center;
     justify-content:center;
   }
-.addressIcon,.phoneIcon,.envelopeIcon{
-    font-size: 50px;
+/* .addressIcon,.phoneIcon,.envelopeIcon{ */
+    /* font-size: 50px;
     margin-top: 2%;
     color: rgb(22, 5, 78);
     /* border: 2px solid red; */
-    display: flex;
-}
+    /* display: flex; 
+} */
 .addressIcon,.phoneIcon,.envelopeIcon:hover{
     cursor: pointer;
 }
@@ -294,7 +294,6 @@ ul{
     display: flex;
     justify-content: center;
 }
-
 
 .leftSideForm{
     width: 30%;
