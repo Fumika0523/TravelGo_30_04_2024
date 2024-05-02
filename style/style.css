@@ -321,8 +321,15 @@ ul{
     margin-top: 15px;
     position: relative;
   }
-
-
+.text1{
+    height: 25px;
+}
+.text2{
+    height: 25px;
+}
+.text3{
+    height: 25px;
+}
 .submit{
     size: 100px;
 }
