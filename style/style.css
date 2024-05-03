@@ -105,7 +105,8 @@ color:rgb(37, 160, 201);
 
 .personImage{
     background-repeat: no-repeat; 
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     height:45%;
     width:40%;
     position: absolute;
@@ -114,11 +115,10 @@ color:rgb(37, 160, 201);
     /* box-shadow:10px 10px 30px 40px rgba(67, 4, 6, 0.6); */
     border-radius:5%;
     /* border:2px solid red; */
-    object-fit: contain;
 }
 
 .japanImagePerson{
-    background-image: url("../asset/storyImage.avif");
+    background-image: url("../asset/storyImage.jpeg");
 }
 
 .indiaImagePerson{
