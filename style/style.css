@@ -264,6 +264,24 @@ ul{
     background-color: white;
 }
 
+.connectTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top:  10%;
+}
+.socialIcon{
+    font-size: 25px;
+    margin: 2%;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
 .rightSideForm{
     width: 45%;
     /* border: 2px solid red; */
@@ -311,7 +329,7 @@ ul{
     /* border: 2px solid red; */
     height: 400px;
     background-color: rgb(142, 211, 234);
-    margin: 10px;
+    padding: 2%;
     border-radius: 10%;
 }
 .contactOne{
