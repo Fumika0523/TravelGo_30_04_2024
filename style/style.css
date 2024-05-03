@@ -291,6 +291,11 @@ ul{
 .addressIcon,.phoneIcon,.envelopeIcon:hover{
     cursor: pointer;
 }
+.required{
+    color: black;
+    font-weight: lighter;
+    font-size: 15px;
+}
 .inputBox{
     padding: 5%;
 }
