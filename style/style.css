@@ -348,8 +348,8 @@ ul{
     margin-left: 3.5%;
     border-left: 5px solid rgb(136, 182, 229);;
     padding-left: 30px;
-    
 }
+
 .service{
     /* background-color: rgb(81, 13, 13); */
     color: rgb(21, 11, 137);
@@ -404,7 +404,7 @@ ul{
 
   h2{
     font-size: 20px;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
   }
   .text{
     padding: 3% 2% 0.5% 1.5%;
