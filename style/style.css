@@ -59,7 +59,6 @@ color:rgb(37, 160, 201);
 .travelImages{
     margin-left: auto;
     /* border: 3px solid red; */
-    position: absolute;
     padding-left: 5.5%;
 } 
 .travelSample{
@@ -87,7 +86,7 @@ color:rgb(37, 160, 201);
     background-size: cover;
     height:300px;
     width:40%;
-    position: relative;
+    position: sticky;
     border-radius: 5%;
     display: inline-block;
     /* border:2px solid red; */
@@ -297,7 +296,7 @@ ul{
     font-size: 15px;
 }
 .inputBox{
-    padding: 5%;
+    padding: %;
 }
 .contactItem{
     display: flex;
