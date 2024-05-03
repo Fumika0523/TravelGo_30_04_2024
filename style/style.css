@@ -143,6 +143,10 @@ color:rgb(37, 160, 201);
     /* border:2px solid red; */
 }
 
+.testimonialSection{
+    position: relative;
+}
+
 /* AboutSection */
 
 .aboutSection{
