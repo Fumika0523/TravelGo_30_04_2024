@@ -291,7 +291,9 @@ ul{
 .addressIcon,.phoneIcon,.envelopeIcon:hover{
     cursor: pointer;
 }
-
+.inputBox{
+    padding: 2%;
+}
 .contactItem{
     display: flex;
     justify-content: center;
