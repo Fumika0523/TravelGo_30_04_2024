@@ -59,6 +59,7 @@ color:rgb(37, 160, 201);
 .travelImages{
     margin-left: auto;
     /* border: 3px solid red; */
+    position: absolute;
     padding-left: 5.5%;
 } 
 .travelSample{
