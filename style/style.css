@@ -262,7 +262,7 @@ ul{
 }
 
 .rightSideForm{
-    width: 30%;
+    width: 45%;
     /* border: 2px solid red; */
     height: 300px;
     background-color: white;
@@ -274,34 +274,50 @@ ul{
     padding: 1% 1% 2% 5%;
 }
 
+.formText{
+    font-size: 28px;
+    font-weight: bold;
+    /* border: 2px solid red; */
+    padding-bottom: 3px;
+    width: 200px;
+}
+.required{
+    font-size: 10px;
+    font-weight: lighter;
+    padding-top: 0;
+    margin-top: 0;
+       /* border: 2px solid red; */
+}
+
 .contactBody .contactContent{
     display: flex;
     align-items:center;
     justify-content:center;
   }
-.addressIcon,.phoneIcon,.emailIcon{
-    font-size: 50px;
-    margin-top: 2%;
-    color: rgb(22, 5, 78);
+
+  .contactIcon{
+    margin-top: 1%;
+    font-size: 52px;
+    color: white;
     /* border: 2px solid red; */
-  
     display: flex;
 }
-.addressIcon,.phoneIcon,.emailIcon:hover{
-    cursor: pointer;
+inputBox{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
 }
-
 .contactItem{
     display: flex;
     justify-content: center;
+    padding:1% 0 ;
 }
-
 
 .leftSideForm{
     width: 30%;
     /* border: 2px solid red; */
     height: 300px;
-    background-color: rgb(142, 211, 234);
+    background-color: rgb(30, 23, 105);
     margin: 10px;
     border-radius: 10%;
 }
@@ -309,10 +325,13 @@ ul{
     font-weight:bold;
     display: flex;
     justify-content: center;
+    color: white;
 }
 .contactTwo{
     display: flex;
     justify-content: center;
+    font-size: 14px;
+    color: white;
 }
   .contactContainer .contactContent .leftSideForm{
     width: 20%;
@@ -320,7 +339,6 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
     position: relative;
   }
 
@@ -385,7 +403,6 @@ ul{
   .icon{
     font-size: 90px;
     margin: 5% 2% 2% 4%;
- 
     /* border: 5px solid rgb(16, 145, 37); */
   }
 
