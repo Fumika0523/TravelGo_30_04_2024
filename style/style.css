@@ -193,15 +193,14 @@ a{
 }
 
 .aboutBgImage{
-    background-image: url("../asset/AboutBGimages.avif");
+    background-image: url("../asset/AboutBGimages.jpeg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
     /* background-attachment: fixed; */
     margin-top: 3%;
     padding-bottom: 2%;
-    /* border: 5px solid red; */
-}
+} 
 
 .aboutSample{
     border-radius: 60%;
