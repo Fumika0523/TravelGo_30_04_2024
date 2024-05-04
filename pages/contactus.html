@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="body-design">
-    <div class="container">
+    <header>
         <div class="navbar">
             <div class="navitems logo"><span class="navLogoIcons">🚢</span>Travel<span style="color:coral;font-size: 20px;"><i>Go</i></span></div>
             <div class="navitems"><span class="navIcons"><i class="fa-solid fa-house-chimney-window homeIcon fontNavIcon"></i></span><a href="../index.html">Home</a></div>
@@ -18,7 +18,7 @@
             <div class="navitems"><span class="navIcons"><i class="fa-solid fa-star starIcon fontNavIcon"></i></span><a href="./testimonials.html">Testimonials</a></div>
             <div class="navitems"><span class="navIcons"><i class="fa-solid fa-envelope emailIcon fontNavIcon"></i></span><a href="./contactus.html">Contact Us</a></div>
         </div>
-    </div>
+    </header>
    <!-- Contact US BODY -->
    <div class="contactBody">
     <div class="contactContent">
@@ -55,7 +55,8 @@
             </div>
         </div>
         <form class="rightSideForm">
-        <h2 class="formText">Contact Us</h2>
+        <div class="rightSideContent">
+        <h2 class="formTitle">Contact Us</h2>
         <div class="inputBox">
             <input type="text" placeholder="Enter Your Name" class="text1" required>
         </div>
@@ -66,12 +67,12 @@
             <input type="text" placeholder="Subject" class="text3" required>
         </div>
         <div class="inputBox">
-            <textarea name="message" id="message" cols="50" rows="7" placeholder="Message" required></textarea>
+            <textarea name="message" id="message" cols="55" rows="11" placeholder="Message" required></textarea>
         </div>
-        <div class="submit">
-            <input type="button" value="Send" style="color: white; background-color: rgb(16, 16, 198);">
-        </div>
+        <button onclick="submitBtn()" class="submit">Submit</button>
+        <p id="submitDone"></p>
         </form>
+    </div>
     </div>
 </div>
     <section class="footer">
@@ -124,5 +125,11 @@
         Site Operator: Trip.com Travel Singapore Pte. Ltd.</p>
     </section>
 </div>
+<script>
+    function submitBtn(){
+        let ptag=document.getElementById("submitDone")
+        ptag.innerHTML="Submission Successful"
+    }
+</script>
 </body>
 </html>
