@@ -488,3 +488,8 @@ font-size: 11.5px;
     margin: 20px 270px 20px 270px;
 }
 
+.testimonialBG{
+    background-image: url("../asset/testimonialBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
