@@ -43,6 +43,7 @@ color:rgb(37, 160, 201);
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1;
     }
 .navLogoIcons{
     font-size: 28px;          
@@ -78,6 +79,8 @@ color:rgb(37, 160, 201);
     /* border:2px solid red; */
     margin:1.5% 5.5%;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+    z-index: 2; 
+    /* overfloat is gone */
 }
 
 .travelBg{
@@ -88,7 +91,6 @@ color:rgb(37, 160, 201);
     position: relative;
     border-radius: 5%;
     display: inline-block;
-    /* border:2px solid red; */
 }
 
 .travelBgJapan{
@@ -106,7 +108,7 @@ color:rgb(37, 160, 201);
 .personImage{
     background-repeat: no-repeat; 
     background-size: contain;
-    background-position: center;
+    background-position:left;
     height:45%;
     width:40%;
     position: absolute;
@@ -119,6 +121,7 @@ color:rgb(37, 160, 201);
 
 .japanImagePerson{
     background-image: url("../asset/storyImage.jpeg");
+    height:51%;
 }
 
 .indiaImagePerson{
@@ -127,6 +130,7 @@ color:rgb(37, 160, 201);
 
 .franceImagePerson{
     background-image: url("../asset/storyFrench.jpg");
+    height: 50%;
 }
 
 /* TestimonialStory */
@@ -492,4 +496,55 @@ font-size: 11.5px;
     background-image: url("../asset/testimonialBG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 500px;
+    background-position:center;
+    /* background-attachment: fixed; */
+    margin-top: 2%;
+    padding-bottom: 2%;
+    /* border: 5px solid red; */
+    justify-content: end;
+    display: flex;
+}
+
+.testimonialBody{
+    box-sizing: border-box;
+    height:  370px;
+    width: 53%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+.testimonialPersonImg{
+    background-image: url("../asset/testimonialPersonImg.avif");
+    height: 120px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    /* border: 2px solid purple; */
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+
+.testimonialComment{
+    /* border: 2px solid red; */
+    text-align: center;
+    display: flex;
+    align-self: center;
+    width: 82%;
+}
+.clientName{
+    /* border:2px solid blue; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0.8%;
+}
+.profession{
+    text-align: center;
 }
