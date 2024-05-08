@@ -56,7 +56,6 @@
         </div>
         <form class="rightSideForm">
         <h2 class="formText">Contact Us</h2>
-        <h3 class="required">*Required</h3>
         <div class="inputBox">
             <input type="text" placeholder="Enter Your Name" required>
         </div>
@@ -69,7 +68,7 @@
         <div class="inputBox">
             <textarea name="message" id="message" cols="50" rows="7" placeholder="Message" required></textarea>
         </div>
-        <button onclick="submitBtn()" class="submit">Submit</button>
+        <button onclick="submitBtn(event)" class="submit">Submit</button>
         <p id="submitDone"></p>
         </form>
     </div>
@@ -126,7 +125,7 @@
     </section>
 </div>
 <script>
-    function submitBtn(){
+    function submitBtn(event){
         let ptag=document.getElementById("submitDone")
         ptag.innerHTML="Submission Successful"
     }

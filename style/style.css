@@ -280,7 +280,10 @@ ul{
     justify-content: space-around;
     padding: 1% 1% 2% 5%;
 }
-
+.formText{
+    font-weight: bold;
+    font-size: 30px;
+}
 .contactBody .contactContent{
     display: flex;
     align-items:center;
@@ -298,7 +301,7 @@ ul{
     cursor: pointer;
     background-color: rgb(8, 8, 93);
     color: white;
-    border-radius: 30%;
+    border-radius: 39%;
     padding: 3.5%;
 }
 .connectTitle{
@@ -311,7 +314,7 @@ ul{
     cursor: pointer;
     background-color: rgb(8, 8, 93);
     color: white;
-    border-radius: 30%;
+    border-radius: 39%;
     padding: 3%;
 }
 .socialIcons{
