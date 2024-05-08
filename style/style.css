@@ -492,7 +492,7 @@ font-size: 11.5px;
     margin: 20px 270px 20px 270px;
 }
 
-.testimonialBG{
+.testimonialContainer{
     background-image: url("../asset/testimonialBG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -502,8 +502,11 @@ font-size: 11.5px;
     margin-top: 2%;
     padding-bottom: 2%;
     /* border: 5px solid red; */
-    justify-content: end;
+    /* justify-content: end; */
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .testimonialBody{
@@ -512,10 +515,34 @@ font-size: 11.5px;
     width: 53%;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     background-color: white;
     margin-top: 5%;
-    margin-right: 5%;
+}
+.testimonialLeftImage1{
+    background-image: url(../asset/testimonialLeftImage.htm);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 370px;
+    width: 30%;
+}
+.testimonialLeftImage2{
+    background-image: url(../asset/testimonialLeftImage.avif);
+    display: flex;
+    height: 370px;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.testimonialLeftImage3{
+    background-image: url(../asset/testimonialLeftImage2.avif);
+    display: flex;
+    height: 370px;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size:cover;
+
 }
 .testimonialPersonImg{
     background-image: url("../asset/testimonialPersonImg.avif");
