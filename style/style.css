@@ -289,13 +289,39 @@ ul{
   
 .addressIcon,.phoneIcon,.envelopeIcon{
     font-size: 50px;
-    margin-top: 2%;
+    margin-top: 5%;
     color: rgb(22, 5, 78);
     /* border: 2px solid red;  */
     display: flex; 
 } 
-.addressIcon,.phoneIcon,.envelopeIcon:hover{
+.addressIcon:hover,.phoneIcon:hover,.envelopeIcon:hover{
     cursor: pointer;
+    background-color: rgb(8, 8, 93);
+    color: white;
+    border-radius: 30%;
+    padding: 6%;
+}
+.connectTitle{
+    font-size: 16px;
+    margin-top: 5%;
+    justify-content: center;
+    display:flex ;
+}
+.socialIcon:hover{
+    cursor: pointer;
+    background-color: rgb(8, 8, 93);
+    color: white;
+    border-radius: 30%;
+    padding: 6%;
+}
+.socialIcons{
+    font-size: 30px;
+    color: rgb(22, 5, 78);  
+    display: flex;
+    align-items:center;
+    margin-top: 5%;
+    column-gap: 5%;
+    justify-content:center;
 }
 .required{
     color: black;
@@ -474,9 +500,9 @@ body{
     /* border:1px solid red; */
     width: 120px;
 }
-.listCommon{
-/* border:1px solid yellow; */
-}
+/* .listCommon{
+border:1px solid yellow; 
+}*/
 .contactAward{
 color: white;
 text-align: center;
@@ -492,6 +518,7 @@ font-size: 11.5px;
     margin: 20px 270px 20px 270px;
 }
 
+/* TESTIMONIAL */
 .testimonialContainer{
     background-color:rgb(91, 91, 130);
     /* background-image: url("../asset/testimonialBG.jpg"); */
