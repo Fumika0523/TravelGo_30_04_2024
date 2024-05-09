@@ -67,17 +67,21 @@
             <span id="emailError"></span>     
         </div>
         <div class="inputBox">
-            Male :<input type="radio" name="male" id="gender" value="male">
-            Female :<input type="radio" name="female" id="gender" value="female">
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
             <span id="genderError"></span>     
         </div>
         <div class="inputBox">
             <label for="subject">Subject</label>
             <input type="text" value="">
+            <span id="subjectError"></span>
         </div>
         <div class="inputBox">
             <label for="message">Message</label><br>
             <textarea name="message" id="message" cols="50" rows="7"></textarea>
+            <span id="messageError"></span>
         </div>
         <input type="submit" value="Submit">
         </form>
@@ -138,14 +142,10 @@
     const rightSideFormTest=document.getElementById("rightSideForm")
     rightSiteFormTest=addEventListener('submit',(event)=>{
         event.preventDefault()
-        console.log("Form is successfully Submitted!")
         let fullnameTest=document.getElementById("fullname").value
-        console.log('Fullname is',fullnameTest)
         let emailTest=document.getElementById("email").value
-        console.log(emailTest)
-        console.log('Email is',emailTest)
-        let genderTest=document.getElementById("gender").value
-        console.log('Gender is',genderTest)
+        let maleTest=document.getElementById("male").value
+        let femaleTest=document.getElementById("female").value
         let fullnameError=document.getElementById("fullnameError")
         let emailError=document.getElementById("emailError")
         let genderError=document.getElementById("genderError")
@@ -162,8 +162,14 @@
             emailError.style.color="red"
         }
         //gender
-        if(genderTest=="female".checked){
+        if(femaleTest.value=="female"){
             console.log("Female")
+        }
+        else if(maleTest.value=="male"){
+            console.log("Male")
+        }
+        else if(maleTest.value,femaleTest.value==""){
+            console.log("Please select your gender")
         }
     })
 

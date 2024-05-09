@@ -613,3 +613,15 @@ font-size: 11.5px;
     text-align: center;
     padding-top: 3%;
 }
+
+/* FlagSection */
+.flagSection{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 12%;
+}
+.flagDesign{
+    height: 125px;
+    width: 225px;
+}
