@@ -54,22 +54,32 @@
             </div>
             </div>
         </div>
-        <form class="rightSideForm">
+        <form id="rightSideForm" class="rightSideForm">
         <h2 class="formText">Contact Us</h2>
         <div class="inputBox">
-            <input type="text" placeholder="Enter Your Name" required>
-        </div>
-        <div class="inputbox">
-            <input type="text" placeholder="Enter Your Email" required>
-        </div>
-        <div class="inputbox">
-            <input type="text" placeholder="Subject" required>
+            <label for="fullname">Full Name</label>
+            <input type="text" value="" id="fullname">
+            <span id="fullnameError"></span>
         </div>
         <div class="inputBox">
-            <textarea name="message" id="message" cols="50" rows="7" placeholder="Message" required></textarea>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" value="">  
+            <span id="emailError"></span>     
         </div>
-        <button onclick="submitBtn(event)" class="submit">Submit</button>
-        <p id="submitDone"></p>
+        <div class="inputBox">
+            Male :<input type="radio" name="male" id="gender" value="male">
+            Female :<input type="radio" name="female" id="gender" value="female">
+            <span id="genderError"></span>     
+        </div>
+        <div class="inputBox">
+            <label for="subject">Subject</label>
+            <input type="text" value="">
+        </div>
+        <div class="inputBox">
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="50" rows="7"></textarea>
+        </div>
+        <input type="submit" value="Submit">
         </form>
     </div>
     </div>
@@ -125,10 +135,38 @@
     </section>
 </div>
 <script>
-    function submitBtn(event){
-        let ptag=document.getElementById("submitDone")
-        ptag.innerHTML="Submission Successful"
-    }
+    const rightSideFormTest=document.getElementById("rightSideForm")
+    rightSiteFormTest=addEventListener('submit',(event)=>{
+        event.preventDefault()
+        console.log("Form is successfully Submitted!")
+        let fullnameTest=document.getElementById("fullname").value
+        console.log('Fullname is',fullnameTest)
+        let emailTest=document.getElementById("email").value
+        console.log(emailTest)
+        console.log('Email is',emailTest)
+        let genderTest=document.getElementById("gender").value
+        console.log('Gender is',genderTest)
+        let fullnameError=document.getElementById("fullnameError")
+        let emailError=document.getElementById("emailError")
+        let genderError=document.getElementById("genderError")
+        //fullname
+        if(fullnameTest.length==0){
+        console.log("Fullname should not be empty")
+        fullnameError.innerHTML="Fullname should not be empty"
+        fullnameError.style.color="red"
+        }
+        //email
+        if(emailTest.length==0){
+            console.log("Please enter your email")
+            emailError.innerText="Please enter your email"
+            emailError.style.color="red"
+        }
+        //gender
+        if(genderTest=="female".checked){
+            console.log("Female")
+        }
+    })
+
 </script>
 </body>
 </html>
