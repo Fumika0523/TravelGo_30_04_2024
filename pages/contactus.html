@@ -58,12 +58,12 @@
         <h2 class="formText">Contact Us</h2>
         <div class="inputBox">
             <label for="fullname">Full Name</label>
-            <input type="text" value="" id="fullname">
+            <input type="text" value="" id="fullname"><br>
             <span id="fullnameError"></span>
         </div>
         <div class="inputBox">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" value="">  
+            <input type="email" name="email" id="email" value=""><br>
             <span id="emailError"></span>     
         </div>
         <div class="inputBox">
@@ -154,12 +154,14 @@
         console.log("Fullname should not be empty")
         fullnameError.innerHTML="Fullname should not be empty"
         fullnameError.style.color="red"
+        fullnameError.style.fontSize="13px"
         }
         //email
         if(emailTest.length==0){
             console.log("Please enter your email")
             emailError.innerText="Please enter your email"
             emailError.style.color="red"
+            emailError.style.fontSize="13px"
         }
         //gender
         if(femaleTest.value=="female"){
