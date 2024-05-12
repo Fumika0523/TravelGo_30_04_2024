@@ -21,6 +21,7 @@
     </header>
    <!-- Contact US BODY -->
    <div class="contactBody">
+    <h2 class="formText">Contact Us</h2>
     <div class="contactContent">
         <div class="leftSideForm">
             <div class="address">
@@ -55,35 +56,32 @@
             </div>
         </div>
         <form id="rightSideForm" class="rightSideForm">
-        <h2 class="formText">Contact Us</h2>
         <div class="inputBox">
-            <label for="fullname">Full Name</label>
-            <input type="text" value="" id="fullname"><br>
+            <input class="textBox" type="text" value="" id="fullname" placeholder="FULL NAME">
             <span id="fullnameError"></span>
         </div>
         <div class="inputBox">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" value=""><br>
+            <input class="textBox" type="email" name="email" id="email" value="" placeholder="EMAIL">
             <span id="emailError"></span>     
         </div>
         <div class="inputBox">
-            <input type="radio" id="male" name="gender" value="Male">
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="Female">
-            <label for="female">Female</label><br>
+            <!-- <label for="gender"></label><br> -->
+            Male:<input type="radio" id="male" name="gender" value="Male" checked>
+            Female:<input type="radio" id="female" name="gender" value="Female" checked>
             <span id="genderError"></span>     
         </div>
         <div class="inputBox">
-            <label for="subject">Subject</label>
-            <input type="text" value="">
+            <input class="textBox" type="text" id="subject" value="" placeholder="SUBJECT">
             <span id="subjectError"></span>
         </div>
         <div class="inputBox">
-            <label for="message">Message</label><br>
-            <textarea name="message" id="message" cols="51" rows="9"></textarea>
+            <textarea class="textBox1" name="message" value="" id="message" cols="56" rows="8" placeholder="MESSAGE"></textarea><br>
             <span id="messageError"></span>
         </div>
-        <input type="submit" value="Submit">
+        <div class="inputBox">
+            <input type="submit" id=submit class="submit" value="Send Message">
+        </div>
+       
         </form>
     </div>
     </div>
@@ -144,34 +142,61 @@
         event.preventDefault()
         let fullnameTest=document.getElementById("fullname").value
         let emailTest=document.getElementById("email").value
-        let maleTest=document.getElementById("male").value
-        let femaleTest=document.getElementById("female").value
+        let maleTest=document.getElementById("male").checked
+        let femaleTest=document.getElementById("female").checked
+        let subjectTest=document.getElementById("subject").value
+        let messageTest=document.getElementById("message").value
         let fullnameError=document.getElementById("fullnameError")
         let emailError=document.getElementById("emailError")
         let genderError=document.getElementById("genderError")
+        let subjectError=document.getElementById("subjectError")
+        let messageError=document.getElementById("messageError")
+
         //fullname
         if(fullnameTest.length==0){
         console.log("Fullname should not be empty")
-        fullnameError.innerHTML="Fullname should not be empty"
+        fullnameError.innerHTML="Fullname should not be empty!"
         fullnameError.style.color="red"
-        fullnameError.style.fontSize="13px"
+        fullnameError.style.fontSize="12px"
+        fullnameError.style.fontWeight="bold"
         }
+
         //email
         if(emailTest.length==0){
             console.log("Please enter your email")
-            emailError.innerText="Please enter your email"
+            emailError.innerHTML="Please enter your email!"
             emailError.style.color="red"
-            emailError.style.fontSize="13px"
+            emailError.style.fontSize="12px"
+            emailError.style.fontWeight="bold"
         }
+        
         //gender
-        if(femaleTest.value=="female"){
+        if(femaleTest.checked="checked"){
             console.log("Female")
         }
-        else if(maleTest.value=="male"){
-            console.log("Male")
+        else if(maleTest.checked="checked"){
+         console.log("Male")
         }
-        else if(maleTest.value,femaleTest.value==""){
-            console.log("Please select your gender")
+        else{
+         console.log("Please select your gender")
+        }
+    
+        //subject
+        if(subjectTest.length==0){
+            console.log("subject should not be empty")
+            subjectError.innerHTML="Subject should not be empty!"
+            subjectError.style.color="red";
+            subjectError.style.fontSize="12px";
+            subjectError.style.fontWeight="bold";
+        }
+
+        //message
+        if(messageTest.length==0){
+            console.log("Message should not be empty")
+            messageError.innerHTML="Messasge should not be empty!"
+            messageError.style.color="red";
+            messageError.style.fontSize="12px";
+            messageError.style.fontWeight="bold";
         }
     })
 
