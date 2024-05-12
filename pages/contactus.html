@@ -57,25 +57,22 @@
         </div>
         <form id="rightSideForm" class="rightSideForm">
         <div class="inputBox">
-            <input class="textBox" type="text" value="" id="fullname" placeholder="FULL NAME">
-            <span id="fullnameError"></span>
+            <input class="textBox" type="text" value="" id="fullname" placeholder=" FULL NAME"><span id="fullnameError"></span>
         </div>
         <div class="inputBox">
-            <input class="textBox" type="email" name="email" id="email" value="" placeholder="EMAIL">
-            <span id="emailError"></span>     
+            <input class="textBox" type="email" name="email" id="email" value="" placeholder=" EMAIL"><span id="emailError"></span>     
         </div>
         <div class="inputBox">
             <!-- <label for="gender"></label><br> -->
-            Male:<input type="radio" id="male" name="gender" value="Male" checked>
-            Female:<input type="radio" id="female" name="gender" value="Female" checked>
-            <span id="genderError"></span>     
+            Male: <input type="radio" id="male" name="gender" value="Male" >
+            Female: <input type="radio" id="female" name="gender" value="Female" ><span id="genderError"></span>     
         </div>
         <div class="inputBox">
-            <input class="textBox" type="text" id="subject" value="" placeholder="SUBJECT">
+            <input class="textBox" type="text" id="subject" value="" placeholder=" SUBJECT">
             <span id="subjectError"></span>
         </div>
         <div class="inputBox">
-            <textarea class="textBox1" name="message" value="" id="message" cols="56" rows="8" placeholder="MESSAGE"></textarea><br>
+            <textarea class="textBox1" name="message" value="" id="message" cols="68" rows="8" placeholder=" MESSAGE"></textarea><br>
             <span id="messageError"></span>
         </div>
         <div class="inputBox">
@@ -171,14 +168,18 @@
         }
         
         //gender
-        if(femaleTest.checked="checked"){
+        if(femaleTest.checked=="checked"){
             console.log("Female")
         }
-        else if(maleTest.checked="checked"){
+        else if(maleTest.checked=="checked"){
          console.log("Male")
         }
         else{
-         console.log("Please select your gender")
+        console.log("Please select your gender")
+        genderError.innerHTML="Please select your gender!"
+        genderError.style.color="red";
+        genderError.style.fontSize="12px";
+        genderError.style.fontWeight="bold";
         }
     
         //subject
