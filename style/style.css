@@ -11,10 +11,10 @@
     padding: 0 3px 8px 3px;
     color:white;
     background-color: rgb(5, 5, 53);
-    font-size: 15px;
+    font-size: 18px;
 }
 .logo{
-    margin-right: 47%;
+    margin-right: 40%;
 }
 .homeIcon{
 color:rgb(214, 103, 39);
@@ -272,15 +272,14 @@ ul{
 .rightSideForm{
     /* border: 2px solid red; */
     padding-top: 1.5%;
-    height: 400px;
+    height: 410px;
     width: 48%;
     background-color: white;
     border: 1px solid black;
     border-radius: 10%;
     display: flex;
     flex-direction: column;
-    align-items:start;
-    padding-left:3% ;
+    align-items:center;
     margin-bottom:25px;
 }
 
@@ -288,7 +287,7 @@ ul{
     padding-top:6px;
     font-weight: bold;
     color: white;
-    font-size: 42px;
+    font-size: 30px;
     margin-left: 10%;
     display: flex;
 }
@@ -297,6 +296,7 @@ ul{
     display: flex;
     align-items:center;
     justify-content:left;
+    gap: 6%;
   }
   
 .addressIcon,.phoneIcon,.envelopeIcon{
@@ -348,11 +348,11 @@ ul{
 .leftSideForm{
     width: 20%;
     /* border: 2px solid red; */
-    height: 400px;
+    height: 410px;
     background-color: rgb(142, 211, 234);
     margin-bottom:25px;
     border-radius: 10%;
-    margin-left: 5%;
+    margin-left: 9%;
 }
 .contactOne{
     font-weight:bold;
@@ -377,11 +377,11 @@ ul{
 }
 
 .submit{
-    font-size: 16px;
-    background-color: navy;
+    font-size: 20px;
+    background-color:rgb(8, 8, 93);
     color: white;
-    padding: 1px 8px;
-
+    padding: 10px 15px;
+    border-radius: 5%;
 }
 /* Service Section */
 .serviceComment{
@@ -486,7 +486,7 @@ ul{
     font-size: 20px;
 }
 .footerRow .footerCol h3{
-    font-size:16px;
+    font-size:18px;
     font-style: bold;
     color: white;
 }
@@ -507,9 +507,10 @@ body{
 }
 .footerCol{
     display: inline-block;
-    margin:0 20.8% 0 0;
+    margin:0 16.8% 0 0;
     /* border:1px solid red; */
-    width: 120px;
+    width: 140px;
+
 }
 /* .listCommon{
 border:1px solid yellow; 
